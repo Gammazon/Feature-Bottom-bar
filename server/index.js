@@ -8,6 +8,6 @@ app.use(bodyParser.json());
 
 app.use(express.static("dist"));
 
-app.listen(2424, function () {
-    console.log("listening on port 2424!");
+app.listen(4242, function() {
+  console.log("listening on port 4242!");
 });

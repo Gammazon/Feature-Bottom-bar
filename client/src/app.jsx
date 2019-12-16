@@ -20,7 +20,9 @@ const App = props => {
   };
   return (
     <div>
-      <div className="backToTop">Back to top</div>
+      <div className="backToTop" onClick={() => window.scrollTo(0, 0)}>
+        <a href="#firstBar">Back to top</a>
+      </div>
       <div className="bottomBar1">
         <table className="topTable1">
           <tr>
@@ -142,8 +144,8 @@ const App = props => {
       <div id="buffer1"></div>
       <div className="hr"></div>
       <div id="spanish">
-        <span className="container">
-          <span id="Gammazon">GAMMAZON</span>
+        <span className="ctnr">
+          <span id="Gmzon">GAMMAZON</span>
           <button id="language">English</button>
           <button id="country">United States</button>
         </span>
@@ -153,44 +155,46 @@ const App = props => {
           <tr>
             <td>
               Amazon Music <br />
-              <span class="extra">Stream millions of songs</span>{" "}
+              <span className="extra">Stream millions of songs</span>{" "}
             </td>
             <td>
               Amazon Advertising <br />
-              <span class="extra">
+              <span className="extra">
                 Find, attract, and engage customers
               </span>{" "}
             </td>
             <td>
               Amazon Drive
               <br />
-              <span class="extra">Cloud storage from Amazon</span>{" "}
+              <span className="extra">Cloud storage from Amazon</span>{" "}
             </td>
             <td>
               6pm <br />
-              <span class="extra">Score deals on fashion brands</span>{" "}
+              <span className="extra">Score deals on fashion brands</span>{" "}
             </td>
             <td>
               AbeBooks <br />
-              <span class="extra">Books, art & collectibles</span>{" "}
+              <span className="extra">Books, art & collectibles</span>{" "}
             </td>
             <td>
               ACX <br />
-              <span class="extra">Audiobook Publishing Made Easy</span>{" "}
+              <span className="extra">Audiobook Publishing Made Easy</span>{" "}
             </td>
             <td>
               Alexa <br />
-              <span class="extra">Actionable Analytics for the Web</span>{" "}
+              <span className="extra">
+                Actionable Analytics for the Web
+              </span>{" "}
             </td>
           </tr>
           <tr>
             <td>
               Amazon Business <br />
-              <span class="extra">Everything For Your Business</span>{" "}
+              <span className="extra">Everything For Your Business</span>{" "}
             </td>
             <td>
               Amazon Fresh <br />
-              <span class="extra">
+              <span className="extra">
                 Groceries & More Right To Your Door
               </span>{" "}
             </td>
@@ -201,159 +205,173 @@ const App = props => {
             <td>
               Home Services
               <br />
-              <span class="extra">
+              <span className="extra">
                 Handpicked Pros Happiness Guarantee
               </span>{" "}
             </td>
             <td>
               Amazon Ignite <br />
-              <span class="extra">
+              <span className="extra">
                 Sell your original Digital Educational Resources
               </span>{" "}
             </td>
             <td>
               Amazon Rapids <br />
-              <span class="extra">Fun stories for kids on the go</span>{" "}
+              <span className="extra">Fun stories for kids on the go</span>{" "}
             </td>
             <td>
               Amazon Web Services <br />
-              <span class="extra">Scalable Cloud Computing Services</span>{" "}
+              <span className="extra">
+                Scalable Cloud Computing Services
+              </span>{" "}
             </td>
           </tr>
           <tr>
             <td>
               Audible <br />
-              <span class="extra">
+              <span className="extra">
                 Listen to Books & Original Audio Performances
               </span>{" "}
             </td>
             <td>
               Book Depository <br />
-              <span class="extra">Books With Free Delivery Worldwide</span>{" "}
+              <span className="extra">
+                Books With Free Delivery Worldwide
+              </span>{" "}
             </td>
             <td>
               Box Office Mojo <br />
-              <span class="extra">Find Movie Box Office Data</span>{" "}
+              <span className="extra">Find Movie Box Office Data</span>{" "}
             </td>
             <td>
               ComiXology <br />
-              <span class="extra">Thousands of Digital Comics</span>{" "}
+              <span className="extra">Thousands of Digital Comics</span>{" "}
             </td>
             <td>
               CreateSpace <br />
-              <span class="extra">Indie Print Publishing Made Easy</span>{" "}
+              <span className="extra">
+                Indie Print Publishing Made Easy
+              </span>{" "}
             </td>
             <td>
               DPReview
               <br />
-              <span class="extra">Digital Photography</span>{" "}
+              <span className="extra">Digital Photography</span>{" "}
             </td>
             <td>
               East Dane <br />
-              <span class="extra">Designer Men's Fashion</span>{" "}
+              <span className="extra">Designer Men's Fashion</span>{" "}
             </td>
           </tr>
           <tr>
             <td>
               Amazon Music <br />
-              <span class="extra">Stream millions of songs</span>{" "}
+              <span className="extra">Stream millions of songs</span>{" "}
             </td>
             <td>
               Amazon Advertising <br />
-              <span class="extra">
+              <span className="extra">
                 Find, attract, and engage customers
               </span>{" "}
             </td>
             <td>
               Amazon Drive
               <br />
-              <span class="extra">Cloud storage from Amazon</span>{" "}
+              <span className="extra">Cloud storage from Amazon</span>{" "}
             </td>
             <td>
               6pm <br />
-              <span class="extra">Score deals on fashion brands</span>{" "}
+              <span className="extra">Score deals on fashion brands</span>{" "}
             </td>
             <td>
               AbeBooks <br />
-              <span class="extra">Books, art & collectibles</span>{" "}
+              <span className="extra">Books, art & collectibles</span>{" "}
             </td>
             <td>
               ACX <br />
-              <span class="extra">Audiobook Publishing Made Easy</span>{" "}
+              <span className="extra">Audiobook Publishing Made Easy</span>{" "}
             </td>
             <td>
               Alexa <br />
-              <span class="extra">Actionable Analytics for the Web</span>{" "}
+              <span className="extra">
+                Actionable Analytics for the Web
+              </span>{" "}
             </td>
           </tr>
           <tr>
             <td>
               Amazon Business <br />
-              <span class="extra">Everything For Your Business</span>{" "}
+              <span className="extra">Everything For Your Business</span>{" "}
             </td>
             <td>
               Amazon Fresh <br />
-              <span class="extra">
+              <span className="extra">
                 Groceries & More Right To Your Door
               </span>{" "}
             </td>
             <td>
               AmazonGlobal <br />
-              <span class="extra">Ships Orders Internationally</span>{" "}
+              <span className="extra">Ships Orders Internationally</span>{" "}
             </td>
             <td>
               Home Services
               <br />
-              <span class="extra">
+              <span className="extra">
                 Handpicked Pros Happiness Guarantee
               </span>{" "}
             </td>
             <td>
               Amazon Ignite <br />
-              <span class="extra">
+              <span className="extra">
                 Sell your original Digital Educational Resources
               </span>{" "}
             </td>
             <td>
               Amazon Rapids <br />
-              <span class="extra">Fun stories for kids on the go</span>{" "}
+              <span className="extra">Fun stories for kids on the go</span>{" "}
             </td>
             <td>
               Amazon Web Services <br />
-              <span class="extra">Scalable Cloud Computing Services</span>{" "}
+              <span className="extra">
+                Scalable Cloud Computing Services
+              </span>{" "}
             </td>
           </tr>
           <tr>
             <td>
               Audible <br />
-              <span class="extra">
+              <span className="extra">
                 Listen to Books & Original Audio Performances
               </span>{" "}
             </td>
             <td>
               Book Depository <br />
-              <span class="extra">Books With Free Delivery Worldwide</span>{" "}
+              <span className="extra">
+                Books With Free Delivery Worldwide
+              </span>{" "}
             </td>
             <td>
               Box Office Mojo <br />
-              <span class="extra">Find Movie Box Office Data</span>{" "}
+              <span className="extra">Find Movie Box Office Data</span>{" "}
             </td>
             <td>
               ComiXology <br />
-              <span class="extra">Thousands of Digital Comics</span>{" "}
+              <span className="extra">Thousands of Digital Comics</span>{" "}
             </td>
             <td>
               CreateSpace <br />
-              <span class="extra">Indie Print Publishing Made Easy</span>{" "}
+              <span className="extra">
+                Indie Print Publishing Made Easy
+              </span>{" "}
             </td>
             <td>
               DPReview
               <br />
-              <span class="extra">Digital Photography</span>{" "}
+              <span className="extra">Digital Photography</span>{" "}
             </td>
             <td>
               East Dane <br />
-              <span class="extra">Designer Men's Fashion</span>{" "}
+              <span className="extra">Designer Men's Fashion</span>{" "}
             </td>
           </tr>
         </table>
